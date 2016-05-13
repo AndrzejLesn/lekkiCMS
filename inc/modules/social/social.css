@@ -1,0 +1,41 @@
+div#socialitem {
+    float: left;
+    padding: 5px;
+}
+div#socialcnt {
+    float: left;
+    padding: 10px;
+}
+span.socialadr {
+   font-family: 'Clicker Script', sans-serif;
+   letter-spacing: 2px;
+   font-size:22px;
+   font-weight: 600;
+   display: block;
+}
+div#socialdivh3 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    float: left;
+    margin-top: 43px;
+    margin-left: -77px;
+    color: white;
+    background-color: #6679A9;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+div#socialdiv {
+    height: 172px;
+    background-color: white;
+    padding: 15px;
+    border-right: #6679A9;
+    border-top: #6679A9;
+    border-bottom: #6679A9;
+    border-style: groove;
+}
+

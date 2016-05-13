@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+<title>{{site.title}} :: {{page.title}}</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="{{site.description}}" />
+	<meta name="keywords" content="{{site.keywords}}" /> 
+	<link rel="stylesheet" href="{{theme.path}}/style.css" type="text/css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var canDelClass = 0;
+		$(".menu .submenu").hover(function(){
+			if($(this).parent(".active").length<1) {
+				canDelClass = 1;
+				$(this).parent().addClass("active");
+			}
+			},function(){ 
+				if(canDelClass) $(this).parent().removeClass("active");
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="kontener">
+	
+	<div id="naglowek">
+		<div class="logo">
+		<a href="index.php"><img src="{{theme.path}}/img/logo.png" alt="logo"/></a>
+		</div>
+		
+		<ul class="menu">
+			{{menu.top}}
+		</ul>	
+	</div>
+	
+	<div id="blok">
+		<div class="lewa">
+			<ul class="nav">
+				{{menu.side}}
+			</ul>
+		</div>
+		<div class="prawa">
+			<div class="box_mini">
+			<h1 class="blue">MINI</h1>
+				<p><b>20 MB</b> pojemności serwera</p>
+				<p><b>1 GB</b> rocznego transferu</p>
+				<p><b>Nieograniczona</b> liczba subdomen</p>
+				<p>Obsługa <b>dwóch</b> domen</p>
+				<p><b>Nieograniczona</b> liczba kont FTP</p>
+				<p><b>Nieograniczona</b> liczba baz danych</p>
+				<p>Konta e-mail we własnej domenie <b>bez limitów</b></p>
+				<h2>0,30 PLN / pierwszy rok</h2>
+				<h3>3 PLN / opłata roczna</h3>
+				<a href="#" class="button3">Więcej</a>
+			</div>
+			
+			<div class="box_mini">
+			<h1 class="green">MIDI</h1>
+				<p><b>50 MB</b> pojemności serwera</p>
+				<p><b>3 GB</b> rocznego transferu</p>
+				<p><b>Nieograniczona</b> liczba subdomen</p>
+				<p>Obsługa <b>pięciu</b> domen</p>
+				<p><b>Nieograniczona</b> liczba kont FTP</p>
+				<p><b>Nieograniczona</b> liczba baz danych</p>
+				<p>Konta e-mail we własnej domenie <b>bez limitów</b></p>
+				<h2>1 PLN / pierwszy rok</h2>
+				<h3>10 PLN / opłata roczna</h3>
+				<a href="#" class="button3">Więcej</a>
+			</div>
+			
+			<div class="box_mini">
+			<h1>MAXI</h1>
+				<p><b>100 MB</b> pojemności serwera</p>
+				<p><b>6 GB</b> rocznego transferu</p>
+				<p><b>Nieograniczona</b> liczba subdomen</p>
+				<p>Obsługa <b>dziesięciu</b> domen</p>
+				<p><b>Nieograniczona</b> liczba kont FTP</p>
+				<p><b>Nieograniczona</b> liczba baz danych</p>
+				<p>Konta e-mail we własnej domenie <b>bez limitów</b></p>
+				<h2>1,5 PLN / pierwszy rok</h2>
+				<h3>15 PLN / opłata roczna</h3>
+				<a href="#" class="button3">Więcej</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="stopka">
+		{{site.footer}} :: Design by <a href="http://klocus.pl" title="Tworzenie stron WWW, skrypty PHP">Klocek</a> :: {{lcms.footer}}
+	</div>
+	
+</div>
+</body>
+</html>

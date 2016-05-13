@@ -1,0 +1,5 @@
+1. Aby zainstalowaæ szablon, przenieœ go do folderu /themes
+2. Baner strony mo¿na zmieniæ w pliku template.php, w sekcji #header
+3. Loga partnerów mo¿na zmieniæ podmnieniaj¹c, te z folderu /img
+4. Aby dodaæ wiêcej logotypów partnerów nale¿y dodaæ kod <img src="tutaj wstaw swój link do loga"alt="tekst alternatywny">
+ w sekcji #partners w pliku template.php
